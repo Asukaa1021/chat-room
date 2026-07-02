@@ -40,10 +40,10 @@ public class ChatServer {
         public void run() {
             try {
                 BufferedReader reader = new BufferedReader(
-                    new InputStreamReader(socket.getInputStream(),"UTF-8"));
+                    new InputStreamReader(socket.getInputStream(), "UTF-8"));
 
                 writer = new PrintWriter(
-                    new OutputStreamWriter(socket.getOutputStream(),"UTF-8") , true);
+                    new OutputStreamWriter(socket.getOutputStream(), "UTF-8") , true);
                 
                 String firstLine = reader.readLine();
                 String parts[] = firstLine.split(":",3); // JOIN:666:小明

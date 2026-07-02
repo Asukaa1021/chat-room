@@ -7,7 +7,7 @@ import java.util.*;
 public class ChatClient {
 
     public static void main(String args[]) throws IOException {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in, "GBK");
         System.out.print("Server IP (default 127.0.0.1): ");
         String ip = scanner.nextLine().trim();
         if (ip.isEmpty()) {
